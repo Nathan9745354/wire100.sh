@@ -219,7 +219,7 @@ function newClient() {
         BASE_IPV6=$(echo "$SERVER_WG_IPV6" | awk -F '::' '{ print $1 }')
         read -rp "Client's WireGuard IPv6: ${BASE_IPV6}::" -e -i "${DOT_IP}" DOT_IPV6
 
-        for (( i=0; i<=2; i++ ))
+        for (( i=0; i<=100; i++ ))
         do
 				:'
 					Get the last number of IPv4
